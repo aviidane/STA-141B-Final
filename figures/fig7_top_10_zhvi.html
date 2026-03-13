@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_daba241dac81ede714b46db0f66d8015 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:16px"><b>Cities with Highest ZHVI Index</b></h3>
+             
+    
+            <div class="folium-map" id="map_daba241dac81ede714b46db0f66d8015" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_daba241dac81ede714b46db0f66d8015 = L.map(
+                "map_daba241dac81ede714b46db0f66d8015",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3804a447cfdb4c5e059431a9d2f0b89f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3804a447cfdb4c5e059431a9d2f0b89f.addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+            var marker_2320593ec6f660057b6fa121d26f46f0 = L.marker(
+                [38.4898675, -122.3218414],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_cb8fe1069dbce1eb805a98da58bb91e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30bb97413f3dd5ee22d600d2228bb949 = $(`<div id="html_30bb97413f3dd5ee22d600d2228bb949" style="width: 100.0%; height: 100.0%;">Napa, CA: 888934.1835259072</div>`)[0];
+                popup_cb8fe1069dbce1eb805a98da58bb91e3.setContent(html_30bb97413f3dd5ee22d600d2228bb949);
+            
+        
+
+        marker_2320593ec6f660057b6fa121d26f46f0.bindPopup(popup_cb8fe1069dbce1eb805a98da58bb91e3)
+        ;
+
+        
+    
+    
+            var marker_08e4a0ef42123bbe28fbdb82e541ee5a = L.marker(
+                [21.3936552, -157.975819],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_11430259d0af8023618ed5e1f75427b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ace43cfafcfd69f5e20098f7e0ad0bb = $(`<div id="html_4ace43cfafcfd69f5e20098f7e0ad0bb" style="width: 100.0%; height: 100.0%;">Urban Honolulu, HI: 839546.3332363904</div>`)[0];
+                popup_11430259d0af8023618ed5e1f75427b6.setContent(html_4ace43cfafcfd69f5e20098f7e0ad0bb);
+            
+        
+
+        marker_08e4a0ef42123bbe28fbdb82e541ee5a.bindPopup(popup_11430259d0af8023618ed5e1f75427b6)
+        ;
+
+        
+    
+    
+            var marker_43ec1da32d084b5b937ab5fa108fe570 = L.marker(
+                [36.6744117, -121.655037],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_a6318f190c72833058458aca6788f21a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26e17c766b391666542f0b073cd066b2 = $(`<div id="html_26e17c766b391666542f0b073cd066b2" style="width: 100.0%; height: 100.0%;">Salinas, CA: 795786.208932261</div>`)[0];
+                popup_a6318f190c72833058458aca6788f21a.setContent(html_26e17c766b391666542f0b073cd066b2);
+            
+        
+
+        marker_43ec1da32d084b5b937ab5fa108fe570.bindPopup(popup_a6318f190c72833058458aca6788f21a)
+        ;
+
+        
+    
+    
+            var marker_c7c3a995c2056c607cdaea83dadcfbb5 = L.marker(
+                [40.0149856, -105.270545],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_6d6edbd3312dcd218bce7c8286f24ecf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73df684805e1aa828eea262943941ba3 = $(`<div id="html_73df684805e1aa828eea262943941ba3" style="width: 100.0%; height: 100.0%;">Boulder, CO: 719027.9862199508</div>`)[0];
+                popup_6d6edbd3312dcd218bce7c8286f24ecf.setContent(html_73df684805e1aa828eea262943941ba3);
+            
+        
+
+        marker_c7c3a995c2056c607cdaea83dadcfbb5.bindPopup(popup_6d6edbd3312dcd218bce7c8286f24ecf)
+        ;
+
+        
+    
+    
+            var marker_e5d7740b6cd4d4ae597e431f2dd0ef5a = L.marker(
+                [41.6637897, -70.3030155],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_f441f4e15abcf4f1b22bba131a4a2ab7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c255943300b52d948ea66f8a356cdc6 = $(`<div id="html_3c255943300b52d948ea66f8a356cdc6" style="width: 100.0%; height: 100.0%;">Barnstable Town, MA: 675496.5894738954</div>`)[0];
+                popup_f441f4e15abcf4f1b22bba131a4a2ab7.setContent(html_3c255943300b52d948ea66f8a356cdc6);
+            
+        
+
+        marker_e5d7740b6cd4d4ae597e431f2dd0ef5a.bindPopup(popup_f441f4e15abcf4f1b22bba131a4a2ab7)
+        ;
+
+        
+    
+    
+            var marker_a2367040e3804bf57d96a06238b58af1 = L.marker(
+                [45.6794293, -111.044047],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_d4adb1c3051577183489b924761d2eb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52338738909086287d6751b5a540aef4 = $(`<div id="html_52338738909086287d6751b5a540aef4" style="width: 100.0%; height: 100.0%;">Bozeman, MT: 652575.0047481371</div>`)[0];
+                popup_d4adb1c3051577183489b924761d2eb2.setContent(html_52338738909086287d6751b5a540aef4);
+            
+        
+
+        marker_a2367040e3804bf57d96a06238b58af1.bindPopup(popup_d4adb1c3051577183489b924761d2eb2)
+        ;
+
+        
+    
+    
+            var marker_86a00bd6c79eab20a51457168592ca48 = L.marker(
+                [44.0581728, -121.3153096],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_5b001efb5a89d6afc0255ed1c42813a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16f8e11fbab83813500450d890525914 = $(`<div id="html_16f8e11fbab83813500450d890525914" style="width: 100.0%; height: 100.0%;">Bend, OR: 646364.0560015077</div>`)[0];
+                popup_5b001efb5a89d6afc0255ed1c42813a9.setContent(html_16f8e11fbab83813500450d890525914);
+            
+        
+
+        marker_86a00bd6c79eab20a51457168592ca48.bindPopup(popup_5b001efb5a89d6afc0255ed1c42813a9)
+        ;
+
+        
+    
+    
+            var marker_afa7eb7239a37893ebf6332c54005018 = L.marker(
+                [38.1040864, -122.2566367],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_b9b1b7d4606e76fa6642ddc9d7350804 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_210073aafbe45632c74a8b9a663d2fa8 = $(`<div id="html_210073aafbe45632c74a8b9a663d2fa8" style="width: 100.0%; height: 100.0%;">Vallejo, CA: 571081.8186175284</div>`)[0];
+                popup_b9b1b7d4606e76fa6642ddc9d7350804.setContent(html_210073aafbe45632c74a8b9a663d2fa8);
+            
+        
+
+        marker_afa7eb7239a37893ebf6332c54005018.bindPopup(popup_b9b1b7d4606e76fa6642ddc9d7350804)
+        ;
+
+        
+    
+    
+            var marker_2ac17ff878e72d6817de33f527f91910 = L.marker(
+                [35.1987522, -111.651822],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_c18c9c722946b67bd48e1d029aee7396 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81300baa657aab28af9ff1720baa8e17 = $(`<div id="html_81300baa657aab28af9ff1720baa8e17" style="width: 100.0%; height: 100.0%;">Flagstaff, AZ: 568975.9284329668</div>`)[0];
+                popup_c18c9c722946b67bd48e1d029aee7396.setContent(html_81300baa657aab28af9ff1720baa8e17);
+            
+        
+
+        marker_2ac17ff878e72d6817de33f527f91910.bindPopup(popup_c18c9c722946b67bd48e1d029aee7396)
+        ;
+
+        
+    
+    
+            var marker_99a3155e276789370ea6a29206fc335e = L.marker(
+                [48.7544012, -122.478836],
+                {
+}
+            ).addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+    
+        var popup_be8303d8ec07d73ba22d88a396ea1e36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf8d0136e282ac49af43434ad98b9bcb = $(`<div id="html_cf8d0136e282ac49af43434ad98b9bcb" style="width: 100.0%; height: 100.0%;">Bellingham, WA: 562108.3269917133</div>`)[0];
+                popup_be8303d8ec07d73ba22d88a396ea1e36.setContent(html_cf8d0136e282ac49af43434ad98b9bcb);
+            
+        
+
+        marker_99a3155e276789370ea6a29206fc335e.bindPopup(popup_be8303d8ec07d73ba22d88a396ea1e36)
+        ;
+
+        
+    
+    
+            tile_layer_3804a447cfdb4c5e059431a9d2f0b89f.addTo(map_daba241dac81ede714b46db0f66d8015);
+        
+</script>
+</html>
