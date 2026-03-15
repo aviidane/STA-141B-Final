@@ -7,7 +7,7 @@ For this project, we will use two different datasets. The first dataset, called 
 
 The second dataset is an American Community Survey (ACS) that provides data from 2009 to 2024 on metropolitan socioeconomic factors. This dataset was acquired through the U.S. Census Bureau API. The key variables used in this dataset are median household income, education level, poverty rate, unemployment rate, and total population. These variables will let us understand economic and demographic conditions that may relate to housing affordability.
 
-Expected Approach, Hypotheses, and Assumptions
+###Expected Approach, Hypotheses, and Assumptions
 In this project, our approach will consist of three data analysis stages. First, using the ZHVI dataset, we will study the changes in housing prices across different metropolitan areas from 2000 to 2026. To achieve this, we will use pandas to reshape the ZHVI dataset from wide to long format, to get one row per metropolitan area per month. After this, for each metropolitan area, we will compute housing prices and how those prices have changed over time, with the focus on the 2009 through 2024 timeline.
 
 In the second stage, we integrate the ACS dataset. By using the Census API, we will download the ACS data for the 5-year estimates for 2009 through 2024, clean the data, format the responses into pandas DataFrames, and merge the ACS dataset with the ZHVI dataset from the first stage. As a result, this combined dataset will contain the changes in housing prices and the changes in socioeconomic factors for each metropolitan area.
